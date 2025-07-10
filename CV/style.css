@@ -1,0 +1,156 @@
+:root {
+      --bg-color: #ffffff;
+      --text-color: #333333;
+      --header-color: #f4f4f4;
+      --accent-color: #007acc;
+    }
+
+.job {
+      position: relative;
+      margin-bottom: 60px;
+    }
+
+    .job-title-container {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .job-title {
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .tooltip-box {
+      display: none;
+      position: absolute;
+      top: 110%; /* below the title */
+      left: 0;
+      background: #ffffff;
+      color: #333;
+      border: 1px solid #ccc;
+      padding: 10px;
+      width: 350px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+
+    .job-title-container:hover .tooltip-box {
+      display: block;
+    }
+
+    ul {
+      padding-left: 18px;
+      margin: 0;
+    }
+
+    li {
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+
+    body.dark {
+      --bg-color: #121212;
+      --text-color: #eeeeee;
+      --header-color: #1f1f1f;
+      --accent-color: #66ccff;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: var(--header-color);
+      padding: 40px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 20px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-top: 40px;
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    .header {
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 20px;
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .section {
+      margin-top: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .job-title {
+      font-weight: bold;
+    }
+
+    .sub-info {
+      color: #777;
+      font-size: 14px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      padding: 20px 40px 0 40px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    button {
+      padding: 8px 14px;
+      font-size: 14px;
+      background-color: var(--accent-color);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.2s ease;
+    }
+
+    button:hover {
+      background-color: #005fa3;
+    }
+
+    @media print {
+      .buttons {
+        display: none;
+      }
+      body {
+        background: white;
+        color: black;
+      }
+    }
