@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
       M.Sidenav.init(elems);
     });
 
-const baseText = "I'm an introvert but I can be your ";
-  const roles = ["Social Media Manager.", "Digital Marketing.", "Web Designer & Developer."];
+const baseText = " ";
+  const roles = ["Social Media Strategist", "Digital Marketer", "Web Designer in the making", "Aspiring Web Developer"];
   let roleIndex = 0;
   let charIndex = 0;
   let isDeleting = false;

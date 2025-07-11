@@ -46,15 +46,14 @@
 <!--End Navbar-->
 
 <!--Header-->    
-    <div class="showcase ready parallax-container">
-      <div class="showcase parallax"
+    <div class="parallax-container" style="height: 100vh; position: relative; overflow: hidden;">
+      <div class="parallax"
             style="
             float: left;
-            width: 25%;
+            width: 50%;
             min-width: 400px;
             max-width: 100%;
             padding-right: 5%;
-            box-sizing: border-box;
             text-align: center;">
         <img src="asset/ChatGPT Image Jul 9, 2025, 11_40_22 AM.png"
               alt="Headline Image"
@@ -64,9 +63,8 @@
                 display: block;
                 object-fit: cover;" >
       </div>
-        <div class="hit-the-floor font-effect-3d-float z-depth-1"
+        <div class="hit-the-floor"
               style="
-              font-weight: bold;
               position: absolute;
               top: 50%;
               left: 50%;
@@ -76,16 +74,26 @@
               font-size: 5rem;
               padding: 1rem;
               width: 100%;">
-            Lyka May Saavedra
-            <p id="demo" style="color: wheat; font-size: 2rem; font-weight: bold; font-family: 'Courier New', monospace; color: white;">
-            <span id="typed-text"></span><span id="cursor">|</span>
-            </p>
+              <div class=" font-effect-3d-float">
+                Lyka May Saavedra
+              </div>
 
+              <p id="demo" style="font-size: 2rem; font-weight: bold; font-family: 'Courier New', monospace; color: white; margin-bottom: 0;">
+        <span id="typed-text"></span><span id="cursor">|</span>
+        <br>
+        <br><br>
+        <button class="btn waves-effect waves-light pink btn-large" type="submit" name="action">
+          <a href="mailto:lykamaysaavedra@gmail.com?subject=Let’s%20Work%20Together&body=Hi%20Lyka%2C%20I%20saw%20your%20portfolio%20and%20wanted%20to%20connect."Style="color:white">Hire me!</a>
+          <i class="material-icons right">send</i>
+        </button>
+
+        
+      </p>
               <!-- Typing Sound -->
               <audio id="typeSound" src="https://www.soundjay.com/mechanical/typewriter-key-1.mp3" preload="auto"></audio>
         </div>
     </div><!--closing for parallax-container-->
-  
+    <!--Section 1-->
     <div class="section white">
       <div class="row container">
         <h2 id="me">About Me</h2>
@@ -116,6 +124,7 @@
           </div>
       </div>
     </div>
+
     <div class="parallax-container">
       <div class="parallax"><canvas id="canvas"></canvas></div>
     </div>
