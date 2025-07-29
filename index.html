@@ -32,20 +32,20 @@
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="#me">About Me</a></li>
-            <li><a href="badges.html">Services</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="collapsible.html">Contact</a></li>
           </ul>
       </div>
   </nav>
-
+  <!--Side Navbar-->
   <ul class="sidenav" id="mobile-demo">
     <li><a href="#me">About Me</a></li>
-    <li><a href="badges.html">Services</a></li>
+    <li><a href="#services">Services</a></li>
     <li><a href="collapsible.html">Contact</a></li>
   </ul>
 <!--End Navbar-->
 
-<!--Header-->    
+<!--Parallax 1 | Header-->    
     <div class="parallax-container" style="height: 100vh; position: relative; overflow: hidden;">
       <div class="parallax"
             style="
@@ -93,85 +93,105 @@
               <audio id="typeSound" src="https://www.soundjay.com/mechanical/typewriter-key-1.mp3" preload="auto"></audio>
         </div>
     </div><!--closing for parallax-container-->
-    <!--Section 1-->
-    <div class="section white" >
-      <div class="row container">
-        <h2 id="me">About Me</h2>
-        <p style="font-weight: bold;">✨ Need someone who gets things done — creatively, reliably, and with heart? You’re in the right place.
-          <p>
-          I’m a flexible digital creative with a broad skill set in social media management, digital marketing, and web design & development. Whether it’s building an online presence, running campaigns, or managing a website, I’m ready to jump in and get the job done. I don’t just focus on one thing — I help businesses grow by supporting whichever digital area needs the most attention.
 
-          What sets me apart is how I approach my work: I’m trustworthy, resourceful, and I put real care into every task I’m assigned. I work with patience, persistence, and a strong can-do attitude. Even when I don’t know the answer, I’ll find it — no matter how long it takes — to make sure every task is done thoroughly and thoughtfully.
+<!--Section 1 | About me-->
+    <div class="section white about" >
+        <div class="row container">
+          <h2 id="me">About Me</h2>
+            <div class="progress dark grey">
+              <div class="indeterminate blue"></div>
+            </div>
+            <br>
+              <div class="container">
+                <p style="font-weight: bold;">✨ Need someone who gets things done — creatively, reliably, and with heart? You’re in the right place.
+                <p>
+                I’m a flexible digital creative with a broad skill set in social media management, digital marketing, and web design & development. Whether it’s building an online presence, running campaigns, or managing a website, I’m ready to jump in and get the job done. I don’t just focus on one thing — I help businesses grow by supporting whichever digital area needs the most attention.
 
-          <p>Even though <strong><i>I’m naturally ambivert and optimist</i></strong>, I have no problem connecting with people—especially in a work setting. I can confidently engage with clients, teammates, and audiences when needed, and I genuinely enjoy building meaningful, professional relationships.</p>
-          </p>
-        </p>
-        <div class="row">
-          <div class="col s6">
-            <p style="font-weight: bold;">💪 Strengths</p>
-            <p>I’m proactive and self-driven. I look for ways to contribute and grow, even when tasks aren’t assigned. I make sure every hour counts — a mindset I developed through motherhood, where time management is key. My goal is always to be helpful, productive, and valuable to every project I join.</p>
-          </div>
-          <div class="col s6">
-            <p style="font-weight: bold;">⚠️ Weakness</p>
-            <p>At times, I can invest too much time learning something new — not because I’m stuck, but because I want to get it right. I’ve lost sleep meeting deadlines simply because I care about the quality of my output. While this can be a challenge, it also shows my deep commitment to delivering results that matter.</p>
-          </div>
+                What sets me apart is how I approach my work: I’m trustworthy, resourceful, and I put real care into every task I’m assigned. I work with patience, persistence, and a strong can-do attitude. Even when I don’t know the answer, I’ll find it — no matter how long it takes — to make sure every task is done thoroughly and thoughtfully.
+
+                <p>Even though <strong><i>I’m naturally ambivert and optimist</i></strong>, I have no problem connecting with people—especially in a work setting. I can confidently engage with clients, teammates, and audiences when needed, and I genuinely enjoy building meaningful, professional relationships.</p>
+                </p>
+              </p>
+          <div class="row">
+            <div class="col s6">
+              <p style="font-weight: bold;">💪 Strengths</p>
+              <p>I’m proactive and self-driven. I look for ways to contribute and grow, even when tasks aren’t assigned. I make sure every hour counts — a mindset I developed through motherhood, where time management is key. My goal is always to be helpful, productive, and valuable to every project I join.</p>
+            </div>
+            <div class="col s6">
+              <p style="font-weight: bold;">⚠️ Weakness</p>
+              <p>At times, I can invest too much time learning something new — not because I’m stuck, but because I want to get it right. I’ve lost sleep meeting deadlines simply because I care about the quality of my output. While this can be a challenge, it also shows my deep commitment to delivering results that matter.</p>
+            </div>
+              </div>
         </div>
-        <div class="row center">
-            <a class="waves-effect waves-light btn-large black" href="CV/resume.html" target="_blank">
-              <i class="material-icons right blue-text">cloud</i>
-              My RESUME
-            </a>
-          </div>
-      </div>
-    </div>
 
+            <div class="row center">
+              <a class="waves-effect waves-light btn-large black" href="CV/resume.html" target="_blank">
+                <i class="material-icons right blue-text">cloud</i>
+                My RESUME
+              </a>
+            </div>
+        </div>
+    </div><!--closing for Section 1 | About me-->
 
+<!--Parallax 2 | Animation-->
     <div class="parallax-container" >
       <div class="parallax"><canvas id="canvas"></canvas></div>
-    </div>
-    <div class="section white">
-      <div class="row container" style="padding-top: 0 5%;">
-        <div class="col s6">
-          <div class="card" style="border-top-left-radius: 20%; margin: 10%">
-              <div class="card-image">
-                <img src="asset/Digi.png">
-                <span class="card-title" style="color:black; font-weight: bolder;">Digital Marketer Project</span>
-              </div>
-            <div class="card-content">
-              <p>- Social Media Graphic Design (Facebook, Instagram)</p>
-              <p>- Stories, Reels and Tiktok videos</p>
-              <p>- Content Strategist Samples</p>
-              <p>- Paid Ads Monitoring Samples results</p>
-            </div>
-              <div class="card-action">
-                <a href="#">Project Link</a>
-              </div>
-          </div>
-        </div>
+    </div><!--Parallax 2 | Animation-->
 
-        <div class="col s6">
-          <div class="card" style="border-top-left-radius: 20%; margin: 10%">
-              <div class="card-image">
-                <img src="asset/Web.png">
-                <span class="card-title" style="color:black; font-weight: bolder;"> Web Design and Developer Project </span>
-              </div>
-            <div class="card-content">
-              <p>- Funnels Design in different professions and businesses</p>
-              <p>- Wed Design Samples</p>
-              <p>- Web Dev Samples Sites (it's live and clickable)</p>
-              <p>- Sample App Design</p>
+<!--Section 2 | Services-->
+    <div class="section white services">
+      <div class="row container" style="padding-top: 0 5%;">
+        <div class="col s12 bg" style="background-color: white; padding:5%;">
+            <h2 id="services">Services | Offer</h2>
+            <div class="progress dark grey">
+              <div class="indeterminate blue"></div>
             </div>
-              <div class="card-action" style="color: red;" >
-                <a href="#">Project Link</a>
+            <br><br>
+            <div class="container">
+              <div class="row" style="text-align: center;">
+              <div class="col s12 m3">
+                <h5 style="font-weight: bold;">📣 Social Media</h5>
+                <ul>
+                  <li>Content Creation</li>
+                  <li>Content Scheduling</li>
+                  <li>Content Copy</li>
+                  <li>Engagement/ Outreach</li>
+                </ul>
               </div>
-          </div>
+              <div class="col s12 m3">
+                <h5 style="font-weight: bold;">🧠 Digital marketing</h5>
+                <ul>
+                  <li>Campaign Strategy</li>
+                  <li>Ads basics</li>
+                  <li>SEO basics</li>
+                  <li>Analytics Setup</li>
+                </ul>
+              </div>
+              <div class="col s12 m3">
+                <h5 style="font-weight: bold;">🎨 Web Design</h5>
+                <ul>
+                  <li>Landing Page</li>
+                  <li>Sales Funnels</li>
+                  <li>UI mockups</li>
+                  <li>Moodborads</li>
+                </ul>
+              </div>
+              <div class="col s12 m3">
+                <h5 style="font-weight: bold;">👩‍💻 Web Development</h5>
+                <ul>
+                  <li>Wordpress/ Wix</li>
+                  <li>HTML/ CSS</li>
+                  <li>Responsive Website (CSS Frameworks)</li>
+                  <li>Javascript basics</li>
+                </ul>
+              </div>
+            </div>
+            </div>
         </div>
-        
       </div>
-    </div>
+    </div><!--closing for Section 2 | Services-->
 
     <div class="parallax-container" >
-    
     </div>
 
     <div class="section white" >

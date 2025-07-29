@@ -59,3 +59,19 @@ canvas {
   text-align: center;
 }
 
+.about {
+  background-image: url(asset/bdparallax1.jpg);
+}
+
+.services {
+  background-image: url(asset/bdparallax2.jpg);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.bg{
+  border-radius: 3%;
+}
+
+  
+
