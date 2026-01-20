@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lyks Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="asset/logo.webp">
+
+  <meta charset="UTF-8">
+  <meta name="description" content="Lyks Portfolio">
+  <meta name="keywords" content="HTML, CSS, bootstrap, CV, Resume, Lyks">
+  <meta name="author" content="Lyka Saavedra">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&effect=shadow-multiple|3d-float">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--Navbar-->
+  <nav class="nav-extended transparent">
+      <div class="nav-wrapper" style="margin: 0px 20px;">
+        <a href="https://lyksph02.github.io/lykssvdr.github.io/" class="left-icon"><i class="material-icons">all_inclusive</i></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#me">About Me</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="collapsible.html">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+  <!--Side Navbar-->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#me">About Me</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="collapsible.html">Contact</a></li>
+  </ul>
+<!--End Navbar-->
+
+<!--Parallax 1 | Header-->    
+    <div class="parallax-container" style="height: 100vh; position: relative; overflow: hidden;">
+      <div class="parallax"
+            style="
+            float: left;
+            width: 50%;
+            min-width: 400px;
+            max-width: 100%;
+            padding-right: 5%;
+            text-align: center;">
+        <img src="asset/Lyks.png"
+              alt="Headline Image"
+              style="
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;" >
+      </div>
+        <div class="hit-the-floor"
+              style="
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              color: white;
+              text-align: center;
+              font-size: 5rem;
+              padding: 1rem;
+              width: 100%;">
+              <div class=" font-effect-3d-float">
+                Lyka May Saavedra
+              </div>
+
+              <p id="demo" style="font-size: 2rem; font-weight: bold; font-family: 'Courier New', monospace; color: white; margin-bottom: 0;">
+        <span id="typed-text"></span><span id="cursor">|</span>
+        <br>
+        <br><br>
+        <button class="btn-wave pulse btn waves-effect waves-light btn red btn-large" type="submit" name="action">
+          <a href="mailto:lykamaysaavedra@gmail.com" style="color:white">Hire me!</a>
+          <i class="material-icons right">send</i>
+        </button>
+
+        
+      </p>
+              <!-- Typing Sound -->
+              <audio id="typeSound" src="https://www.soundjay.com/mechanical/typewriter-key-1.mp3" preload="auto"></audio>
+        </div>
+    </div><!--closing for parallax-container-->
+
+<!--About me-->
+    <div class="section white about" >
+        <div class="row container">
+          <h2 id="me">About Me</h2>
+            <div class="progress dark grey">
+              <div class="indeterminate blue"></div>
+            </div>
+            <br>
+              <div class="container">
+                <p style="font-weight: bold;">✨ Need someone who gets things done — creatively, reliably, and do things with care? You’re in the right place.
+                <p>
+                I’m a flexible digital creative with a broad skill set in social media management, digital marketing, and web design & development. Whether it’s building an online presence, running campaigns, or managing a website, I’m ready to jump in and get the job done. I don’t just focus on one thing, I help businesses grow by supporting whichever digital area needs the most attention.
+
+                What sets me apart is how I approach my work: I’m trustworthy, resourceful, and I put real care into every task I’m assigned. I work with patience, persistence, and a strong can-do attitude. Even when I don’t know the answer, I’ll look for it, no matter how long it takes to make sure every task is done thoroughly and thoughtfully.
+
+                <p>Even though <strong><i>I’m naturally ambivert and optimist</i></strong>, I have no problem connecting with people especially in a work setting. I can confidently engage with clients, teammates, and audiences when needed, and I genuinely enjoy building meaningful, professional relationships.</p>
+                </p>
+              </p>
+          <div class="row">
+            <div class="col s6">
+              <p style="font-weight: bold;">💪 Strengths</p>
+              <p>I’m proactive and self-driven. I look for ways to contribute and grow. I make sure every hour counts, a mindset I developed through motherhood, where time management is key. My goal is always to be helpful, productive, and valuable to every project I join.</p>
+            </div>
+            <div class="col s6">
+              <p style="font-weight: bold;">⚠️ Weakness</p>
+              <p>At times, I can invest too much time learning something new, not because I’m stuck, but because I want to get it right. I’ve lost sleep meeting deadlines simply because I care about the quality of my output. While this can be a challenge, it also shows my deep commitment to delivering results that matter.</p>
+            </div>
+              </div>
+        </div>
+
+            <div class="row center">
+              <a class="waves-effect waves-light btn-large black" href="CV/resume.html" target="_blank">
+                <i class="material-icons right blue-text">cloud</i>
+                My RESUME
+              </a>
+            </div>
+        </div>
+    </div><!--closing | About me-->
+
+<!--Parallax 2 | Animation-->
+    <div class="parallax-container" >
+      <div class="parallax"><canvas id="canvas"></canvas></div>
+    </div><!--Parallax 2 | Animation-->
+
+<!--Services-->
+    <div class="section white services">
+      <div class="row container" style="padding-top: 0 5%;">
+        <div class="col s12 bg" style="background-color: white; padding:5%;">
+            <h2 id="services">Services | Offer</h2>
+            <div class="progress dark grey">
+              <div class="indeterminate blue"></div>
+            </div>
+            <br><br>
+            <div class="container">
+              <div class="row" style="text-align: center;">
+              <div class="col s12 m3">
+                <h5 style="font-weight: bold;">📣 Social Media</h5>
+                <ul>
+                  <li>Content Creation</li>
+                  <li>Content Scheduling</li>
+                  <li>Content Copy</li>
+                  <li>Engagement/ Outreach</li>
+                </ul>
+              </div>
+              <div class="col s12 m3">
+                <h5 style="font-weight: bold;">🧠 Digital marketing</h5>
+                <ul>
+                  <li>Campaign Strategy</li>
+                  <li>Ads basics</li>
+                  <li>SEO basics</li>
+                  <li>Analytics Setup</li>
+                </ul>
+              </div>
+              <div class="col s12 m3">
+                <h5 style="font-weight: bold;">🎨 Web Design</h5>
+                <ul>
+                  <li>Landing Page</li>
+                  <li>Sales Funnels</li>
+                  <li>UI mockups</li>
+                  <li>Moodborads</li>
+                </ul>
+              </div>
+              <div class="col s12 m3">
+                <h5 style="font-weight: bold;">👩‍💻 Web Development</h5>
+                <ul>
+                  <li>Wordpress/ Wix</li>
+                  <li>HTML/ CSS</li>
+                  <li>Responsive Website (CSS Frameworks)</li>
+                  <li>Javascript basics</li>
+                </ul>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div><!--closing | Services-->
+
+<!--Parallax 3 | Pattern (flower)-->
+    <div class="parallax-container blck1" >
+      <img src="asset/bgblck1.png" alt="pattern" 
+      style="opacity: 0.5; 
+          width: 1920px;
+          object-fit: cover;">
+    </div><!--closing for Parallax 3 | Pattern (flower)-->
+
+<!--Projects-->
+    <div class="section white" >
+      <div class="row container">
+        <h2 id="project">Projects</h2>
+            <div class="progress dark grey">
+              <div class="indeterminate blue"></div>
+            </div>
+      </div>
+      <div class="container">
+          <!--Social Media-->
+          <div class="row">
+              <div class="col s12 m6 carousel">
+                <h5><i>Social Media Post</i></h5>
+                  <a class="carousel-item" href="#one!"><img src="asset/POST3.jpg"></a>
+                  <a class="carousel-item" href="#two!"><img src="asset/POST2.jpg"></a>
+                  <a class="carousel-item" href="#three!"><img src="asset/flyers4.png"></a>
+                  <a class="carousel-item" href="#four!"><img src="asset/design2.png"></a>
+                  <a class="carousel-item" href="#five!"><img src="asset/menu.png"></a>
+                  <a class="carousel-item" href="#six!"><img src="asset/post8.png"></a>
+                  <a class="carousel-item" href="#seven!"><img src="asset/post7.png"></a>
+                  <a class="carousel-item" href="#three!"><img src="asset/post10.png"></a>
+              </div>
+
+              <div class="col s12 m6 carousel">
+                <h5><i>AI Creation/ Designing</i></h5>
+                  <a class="carousel-item" href="#five!"><img src="asset/design2.png"></a>
+                  <a class="carousel-item" href="#seven!"><img src="asset/pattern2.png"></a>
+                  <a class="carousel-item" href="#five!"><img src="asset/design1.jpg"></a>
+                  <a class="carousel-item" href="#one!"><img src="asset/ai5.png"></a>
+                  <a class="carousel-item" href="#two!"><img src="asset/ai1.png"></a>
+                  <a class="carousel-item" href="#three!"><img src="asset/ai2.jpg"></a>
+                  <a class="carousel-item" href="#four!"><img src="asset/ai3.jpg"></a>
+                  <a class="carousel-item" href="#three!"><img src="asset/LOGODESIGN.jpg"></a>
+                  <a class="carousel-item" href="#four!"><img src="asset/BESA.png"></a>
+                  <a class="carousel-item" href="#three!"><img src="asset/PC_Logo-removebg.png"></a>
+              </div>
+          </div><!--row close-->
+          
+          <div class="row">
+            <div class="col s12 m6 carousel">
+              <h5><i>Flyers</i></h5>
+                <a class="carousel-item" href="#six!"><img src="asset/FLYERS.png"></a>
+                <a class="carousel-item" href="#five!"><img src="asset/flyer1.png"></a>
+                <a class="carousel-item" href="#six!"><img src="asset/flyers3.png"></a>
+                <a class="carousel-item" href="#five!"><img src="asset/flyers5.png"></a>
+            </div>
+          
+            <div class="col s12 m6 carousel">
+              <h5><i>Newsletter</i></h5>
+                <a class="carousel-item" href="#five!"><img src="asset/newsletter.png"></a>
+                <a class="carousel-item" href="#six!"><img src="asset/PAGE 1.png"></a>
+                <a class="carousel-item" href="#seven!"><img src="asset/PAGE 2.png"></a>
+              </div>
+            </div>
+          </div><!--row close-->
+          
+          <!--Reels/Video Editing-->
+          <div class="container">
+            <h5 class="center"><i>Video Reels</i></h5>
+          </div>
+            
+<br>
+          <!--Web Design/Development-->
+          <div class="container">
+          <h5 class="center"><i>Website Designs</i></h5>
+
+              <div class="row justify-center"> <!-- flex container -->
+                <div class="col s12 m8 l6 center website-wrapper">
+
+                  <div class="website-card">
+                    <img
+                      src="asset/WEB.jpg"
+                      alt="Website Preview"
+                      class="website-img"/>
+                    <div class="website-action center">
+                      <a href="https://ito-verse.netlify.app/" target="_blank" class="website-link">
+                        Click here!
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+
+</div>
+
+
+          
+
+        
+
+
+          
+
+      </div>
+
+    </div><!--closing | Projects-->
+
+<!--Parallax 4 | -->
+    <div class="parallax-container" >
+    </div><!--closing for Parallax 4 | -->
+
+<!--Case Study-->
+    <div class="section white" >
+      <div class="row container">
+        <h2 id="case">Certificates</h2>
+            <div class="progress dark grey">
+              <div class="indeterminate blue"></div>
+            </div>
+      </div>
+    </div><!--closing | Case Study-->
+
+<!--Parallax 6 | -->
+    <div class="parallax-container" >
+    </div><!--closing for Parallax 6 | -->
+
+<!--Contact Me-->
+    <div class="section white" >
+      <div class="row container">
+        <h2 id="contact">Contact Me</h2>
+            <div class="progress dark grey">
+              <div class="indeterminate blue"></div>
+            </div>
+      </div>
+    </div><!--closing | Contact Me-->
+
+<!--Footer-->
+<footer class="page-footer" style="background-color: black;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+          <h5 class="white-text">Footer Content</h5>
+            <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Links</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+
+    <div class="footer-copyright">
+      <div class="container">
+        © 2014 Copyright Text
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+
+</footer><!--closing | Footer-->
+
+
+<!--CDN-->
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="script.js"></script>
+
+<script>
+
+  $(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+  M.Carousel.init(document.querySelectorAll('.carousel'));
+});
+
+  document.addEventListener('DOMContentLoaded', function() {
+  const elems = document.querySelectorAll('.carousel');
+  M.Carousel.init(elems, {
+    indicators: true
+  });
+});
+</script>
+
+</body>
+
+</html>
