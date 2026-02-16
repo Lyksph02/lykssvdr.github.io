@@ -1,431 +1,463 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lyks Portfolio</title>
   <link rel="icon" type="image/x-icon" href="asset/logo.webp">
 
   <meta charset="UTF-8">
   <meta name="description" content="Lyks Portfolio">
-  <meta name="keywords" content="HTML, CSS, bootstrap, CV, Resume, Lyks">
+  <meta name="keywords" content="HTML, CSS, bootstrap, w3CSS, CV, Resume, Lyks">
   <meta name="author" content="Lyka Saavedra">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&effect=shadow-multiple|3d-float">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link rel="stylesheet" href="style.css">
-</head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
 
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Poppins", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url(/asset/lykss.png);
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url(/asset/bgblck1.png);
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url(/asset/bgblck1.png);
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .hero, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+</style>
+</head>
 <body>
 
-<!--Navbar-->
-  <nav class="nav-extended transparent">
-      <div class="nav-wrapper" style="margin: 0px 20px;">
-        <a href="https://lyksph02.github.io/lykssvdr.github.io/" class="left-icon"><i class="material-icons">all_inclusive</i></a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#me">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-      </div>
-  </nav>
-  <!--Side Navbar-->
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="#me">About Me</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-<!--End Navbar-->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
+</div>
+  </div>
 
-<!--Parallax 1 | Header-->    
-    <div class="parallax-container" style="height: 100vh; position: relative; overflow: hidden;">
-      <div class="parallax"
-            style="
-            float: left;
-            width: 50%;
-            min-width: 400px;
-            max-width: 100%;
-            padding-right: 5%;
-            text-align: center;">
-        <img src="asset/Lyks.png"
-              alt="Headline Image"
-              style="
-                width: 100%;
-                height: auto;
-                display: block;
-                object-fit: cover;" >
-      </div>
-        <div class="hit-the-floor"
-              style="
-              position: absolute;
-              top: 50%;
-              left: 50%;
-              transform: translate(-50%, -50%);
-              color: white;
-              text-align: center;
-              font-size: 5rem;
-              padding: 1rem;
-              width: 100%;">
-              <div class=" font-effect-3d-float">
-                Lyka May Saavedra
-              </div>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
 
-              <p id="demo" style="font-size: 2rem; font-weight: bold; font-family: 'Courier New', monospace; color: white; margin-bottom: 0;">
-        <span id="typed-text"></span><span id="cursor">|</span>
-        <br>
-        <br><br>
-        <button class="btn-wave pulse btn waves-effect waves-light btn red btn-large" type="submit" name="action">
-          <a href="#contact" style="color:white">Hire me!</a>
-          <i class="material-icons right">send</i>
-        </button>
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="padding-bottom: 10%; white-space:nowrap; color: White; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"><h1><b>Lyka May Saavedra</b></h1></div>
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <p id="typed" style="font-size: 2rem; font-weight: bold; font-family: 'Courier New', monospace; color: white; margin-bottom: 0;">
+</div>
+</div>
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>✨ Need someone who gets things done  creatively, reliably, and do things with care? You’re in the right place.</em></p>
+  <p>I’m a flexible digital creative with a broad skill set in social media management, digital marketing, and web design & development. Whether it’s building an online presence, running campaigns, or managing a website, I’m ready to jump in and get the job done. I don’t just focus on one thing, I help businesses grow by supporting whichever digital area needs the most attention.</p>
 
-        
-      </p>
-              <!-- Typing Sound -->
-              <audio id="typeSound" src="https://www.soundjay.com/mechanical/typewriter-key-1.mp3" preload="auto"></audio>
-        </div>
-    </div><!--closing for parallax-container-->
+  What sets me apart is how I approach my work: I’m trustworthy, resourceful, and I put real care into every task I’m assigned. I work with patience, persistence, and a strong can-do attitude. Even when I don’t know the answer, I’ll look for it, no matter how long it takes to make sure every task is done thoroughly and thoughtfully.
 
-<!--About me-->
-    <div class="section white about" >
-        <div class="row container">
-          <h2 id="me">About Me</h2>
-            <div class="progress dark grey">
-              <div class="indeterminate blue"></div>
-            </div>
-            <br>
-              <div class="container">
-                <p style="font-weight: bold;">✨ Need someone who gets things done — creatively, reliably, and do things with care? You’re in the right place.
-                <p>
-                I’m a flexible digital creative with a broad skill set in social media management, digital marketing, and web design & development. Whether it’s building an online presence, running campaigns, or managing a website, I’m ready to jump in and get the job done. I don’t just focus on one thing, I help businesses grow by supporting whichever digital area needs the most attention.
+  <p>Even though <strong><i>I’m naturally ambivert and optimist</i></strong>, I have no problem connecting with people especially in a work setting. I can confidently engage with clients, teammates, and audiences when needed, and I genuinely enjoy building meaningful, professional relationships.</p>
 
-                What sets me apart is how I approach my work: I’m trustworthy, resourceful, and I put real care into every task I’m assigned. I work with patience, persistence, and a strong can-do attitude. Even when I don’t know the answer, I’ll look for it, no matter how long it takes to make sure every task is done thoroughly and thoughtfully.
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Lyka May Saavedra</b></p><br>
+      <img src="/asset/Lyksss.jfif" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
 
-                <p>Even though <strong><i>I’m naturally ambivert and optimist</i></strong>, I have no problem connecting with people especially in a work setting. I can confidently engage with clients, teammates, and audiences when needed, and I genuinely enjoy building meaningful, professional relationships.</p>
-                </p>
-              </p>
-          <div class="row">
-            <div class="col s6">
-              <p style="font-weight: bold;">💪 Strengths</p>
+<br><br><br><br>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p style="font-weight: bold;">💪 Strengths</p>
               <p>I’m proactive and self-driven. I look for ways to contribute and grow. I make sure every hour counts, a mindset I developed through motherhood, where time management is key. My goal is always to be helpful, productive, and valuable to every project I join.</p>
-            </div>
-            <div class="col s6">
+
               <p style="font-weight: bold;">⚠️ Weakness</p>
               <p>At times, I can invest too much time learning something new, not because I’m stuck, but because I want to get it right. I’ve lost sleep meeting deadlines simply because I care about the quality of my output. While this can be a challenge, it also shows my deep commitment to delivering results that matter.</p>
-            </div>
-              </div>
-        </div>
-
-            <div class="row center">
-              <a class="waves-effect waves-light btn-large black" href="CV/resume.html" target="_blank">
-                <i class="material-icons right blue-text">cloud</i>
-                My RESUME
-              </a>
-            </div>
-        </div>
-    </div><!--closing | About me-->
-
-<!--Parallax 2 | Animation-->
-    <div class="parallax-container" >
-      <div class="parallax"><canvas id="canvas"></canvas></div>
-    </div><!--Parallax 2 | Animation-->
-
-<!--Services-->
-    <div class="section white services">
-      <div class="row container" style="padding-top: 0 5%;">
-        <div class="col s12 bg" style="background-color: white; padding:5%;">
-            <h2 id="services">Services | Offer</h2>
-            <div class="progress dark grey">
-              <div class="indeterminate blue"></div>
-            </div>
-            <br><br>
-            <div class="container">
-              <div class="row" style="text-align: center;">
-              <div class="col s12 m3">
-                <h5 style="font-weight: bold;">📣 Social Media</h5>
-                <ul>
-                  <li>Content Creation</li>
-                  <li>Content Scheduling</li>
-                  <li>Content Copy</li>
-                  <li>Engagement/ Outreach</li>
-                </ul>
-              </div>
-              <div class="col s12 m3">
-                <h5 style="font-weight: bold;">🧠 Digital marketing</h5>
-                <ul>
-                  <li>Campaign Strategy</li>
-                  <li>Ads basics</li>
-                  <li>SEO basics</li>
-                  <li>Analytics Setup</li>
-                </ul>
-              </div>
-              <div class="col s12 m3">
-                <h5 style="font-weight: bold;">🎨 Web Design</h5>
-                <ul>
-                  <li>Landing Page</li>
-                  <li>Sales Funnels</li>
-                  <li>UI mockups</li>
-                  <li>Moodborads</li>
-                </ul>
-              </div>
-              <div class="col s12 m3">
-                <h5 style="font-weight: bold;">👩‍💻 Web Development</h5>
-                <ul>
-                  <li>Wordpress/ Wix</li>
-                  <li>HTML/ CSS</li>
-                  <li>Responsive Website (CSS Frameworks)</li>
-                  <li>Javascript basics</li>
-                </ul>
-              </div>
-            </div>
-            </div>
-        </div>
-      </div>
-    </div><!--closing | Services-->
-
-<!--Parallax 3 | Pattern (flower)-->
-    <div class="parallax-container blck1" >
-      <img src="asset/bgblck1.png" alt="pattern" 
-      style="opacity: 0.5; 
-          width: 1920px;
-          object-fit: cover;">
-    </div><!--closing for Parallax 3 | Pattern (flower)-->
-
-<!--Projects-->
-    <div class="section white project" >
-      <div class="row container">
-        <h2 id="project">Projects</h2>
-            <div class="progress dark grey">
-              <div class="indeterminate blue"></div>
-            </div>
-      </div>
-
-      <!--Social Media-->
-      <div class="container">
-          <div class="row">
-              <div class="col s12 m6 carousel">
-                <h5><i>Social Media Post</i></h5>
-                  <a class="carousel-item" href="#one!"><img src="asset/POST3.jpg"></a>
-                  <a class="carousel-item" href="#two!"><img src="asset/POST2.jpg"></a>
-                  <a class="carousel-item" href="#three!"><img src="asset/flyers4.png"></a>
-                  <a class="carousel-item" href="#four!"><img src="asset/design2.png"></a>
-                  <a class="carousel-item" href="#five!"><img src="asset/menu.png"></a>
-                  <a class="carousel-item" href="#six!"><img src="asset/post8.png"></a>
-                  <a class="carousel-item" href="#seven!"><img src="asset/post7.png"></a>
-                  <a class="carousel-item" href="#three!"><img src="asset/post10.png"></a>
-              </div>
-
-              <div class="col s12 m6 carousel">
-                <h5><i>AI Creation/ Designing</i></h5>
-                  <a class="carousel-item" href="#five!"><img src="asset/design2.png"></a>
-                  <a class="carousel-item" href="#seven!"><img src="asset/pattern2.png"></a>
-                  <a class="carousel-item" href="#five!"><img src="asset/design1.jpg"></a>
-                  <a class="carousel-item" href="#one!"><img src="asset/ai5.png"></a>
-                  <a class="carousel-item" href="#two!"><img src="asset/ai1.png"></a>
-                  <a class="carousel-item" href="#three!"><img src="asset/ai2.jpg"></a>
-                  <a class="carousel-item" href="#four!"><img src="asset/ai3.jpg"></a>
-                  <a class="carousel-item" href="#three!"><img src="asset/LOGODESIGN.jpg"></a>
-                  <a class="carousel-item" href="#four!"><img src="asset/BESA.png"></a>
-                  <a class="carousel-item" href="#three!"><img src="asset/PC_Logo-removebg.png"></a>
-                  <a class="carousel-item" href="#one!"><img src="asset/BannerWhim.png"></a>
-                  <a class="carousel-item" href="#one!"><img src="asset/Banner.png"></a>
-                  <a class="carousel-item" href="#one!"><img src="asset/Kami Logo.png"></a>
-                  <a class="carousel-item" href="#one!"><img src="asset/ai5.png"></a>
-              </div>
-
-          </div><!--row close-->
-          
-          <div class="row">
-            <div class="col s12 m6 carousel">
-              <h5><i>Flyers</i></h5>
-                <a class="carousel-item" href="#six!"><img src="asset/FLYERS.png"></a>
-                <a class="carousel-item" href="#five!"><img src="asset/flyer1.png"></a>
-                <a class="carousel-item" href="#six!"><img src="asset/flyers3.png"></a>
-                <a class="carousel-item" href="#five!"><img src="asset/flyers5.png"></a>
-            </div>
-          
-            <div class="col s12 m6 carousel">
-              <h5><i>Newsletter</i></h5>
-                <a class="carousel-item" href="#five!"><img src="asset/newsletter.png"></a>
-                <a class="carousel-item" href="#six!"><img src="asset/PAGE 1.png"></a>
-                <a class="carousel-item" href="#seven!"><img src="asset/PAGE 2.png"></a>
-              </div>
-            </div>
-          </div><!--row close-->
-          
-          <!--Reels/Video Editing-->
-          <div class="container">
-          <h5 class="center"><i>Video/Ai Content (Reels)</i></h5>
-
-              <div class="row justify-center"> <!-- flex container -->
-                <div class="col s12 m8 l6 center website-wrapper">
-
-                  <div class="website-card">
-                    <img
-                      src="asset/videosite.jpg"
-                      alt="Website Preview"
-                      class="website-img"/>
-                    <div class="website-action center">
-                      <a href="https://www.canva.com/design/DAG-9dMxdsY/-BQsqALF3BqFEYJwPwPGCQ/view?utm_content=DAG-9dMxdsY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb5c85852cd" target="_blank" class="website-link">
-                        Click here!
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-            
-<br><br>
-          <!--Marketing/ Outreach-->
-          <div class="container">
-            <div class="center col s12 m6 carousel">
-                <h5><i>Report/ Analytics/ Outreach</i></h5>
-                  <a class="carousel-item" href="#five!"><img src="asset/Data Scrubbing.jpg"></a>
-                  <a class="carousel-item" href="#six!"><img src="asset/Outreach Result.jfif"></a>
-                  <a class="carousel-item" href="#one!"><img src="asset/Mar1.jpg"></a>
-                  <a class="carousel-item" href="#two!"><img src="asset/Mar2.jpg"></a>
-                  <a class="carousel-item" href="#four!"><img src="asset/mar3.jpg"></a>
-                  <a class="carousel-item" href="#five!"><img src="asset/mar4.jpg"></a>
-                  <a class="carousel-item" href="#five!"><img src="asset/Besa analytics 1.jpg"></a>
-                  <a class="carousel-item" href="#six!"><img src="asset/Besa Analytics 2.jpg"></a>
-                  <a class="carousel-item" href="#five!"><img src="asset/Besa analytics 4.jpg"></a>
-                  <a class="carousel-item" href="#six!"><img src="asset/Besa analytics 8.jpg"></a>
-                  <a class="carousel-item" href="#five!"><img src="asset/Besa analytics 10 FB.jpg"></a>
-                  <a class="carousel-item" href="#six!"><img src="asset/mar5.jpg"></a>
-              </div>
-          </div>
-
-          <!--Web Design/Development-->
-          <div class="container">
-          <h5 class="center"><i>Website Designs/Development</i></h5>
-
-              <div class="row justify-center"> <!-- flex container -->
-                <div class="col s12 m8 l6 center website-wrapper">
-
-                  <div class="website-card">
-                    <img
-                      src="asset/WEB.jpg"
-                      alt="Website Preview"
-                      class="website-img"/>
-                    <div class="website-action center">
-                      <a href="https://ito-verse.netlify.app/" target="_blank" class="website-link">
-                        Click here!
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-            </div>
-
-</div><!--closing | Project -->
-
-<!--Parallax 4 | -->
-    <div class="parallax-container" >
-    </div><!--closing for Parallax 4 | -->
-
-<!--Certificates-->
-    <div class="section white certificates" >
-      <div class="container">
-        <h2 id="case">Certificates</h2>
-            <div class="progress dark grey">
-              <div class="indeterminate blue"></div>
-            </div>
-
-            <div class="center carousel">
-                <h5><i>Trainings</i></h5>
-                  <a class="carousel-item" href="#one!"><img src="asset/Web Creative - Lyka May Saavedra.jpg"></a>
-                  <a class="carousel-item" href="#two!"><img src="asset/Java Certificate - Lyka May Saavedra.png"></a>
-                  <a class="carousel-item" href="#four!"><img src="asset/Full Stack Web Development - Lyka MAy Saavedra.png"></a>
-                  <a class="carousel-item" href="#five!"><img src="asset/Japanese Language - Lyka May Saavedra.jpg"></a>
-            </div>
-
-      </div>
-    </div><!--closing | Certificates-->
-
-<!--Parallax 6 | -->
-    <div class="parallax-container" >
-    </div><!--closing for Parallax 6 | -->
-
-<!--Contact Me-->
-    <div class="section white contact" >
-      <div class="row container">
-        <h2 id="contact">Contact Me</h2>
-            <div class="progress dark grey">
-              <div class="indeterminate blue"></div>
-            </div>
-              <h6>Feel free to reach out for collaborations or work inquiries!</h6>
-              <br>
-              <form action="mailto:lykamaysaavedra@gmail.com" method="post" enctype="text/plain">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
-              <br>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-              <br>
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="8" required></textarea>
-                <br><br>
-                <button type="submit">Send Message</button>
-              </form>
-      </div>
-    </div><!--closing | Contact Me-->
-
-<!--Footer-->
-<footer class="page-footer" style="background-color: black;">
-
-
-        <div class="container">
-          <h5 class="white-text">Contact Details</h5>
-            <ul>
-              <li><a class="grey-text text-lighten-3" href="https://github.com/lyksph02">GitHub</a></li>
-              <li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/lyksph/">LinkedIn</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">lykamaysaavedra@gmail.com / lykamaysaavedra02@gmail.com</a></li>
-              <li><a class="grey-text text-lighten-3" href="#!">WhatsApp: 09067795852</a></li>
-            </ul>
-        </div>
     </div>
   </div>
 
-    <div class="center footer-copyright">
-      <div class="container"><i>© 2026 Copyright | Lyksph</i></div>
+          <div class="W3-row w3-center">
+            <div class="container">
+                <a class="w3-button w3-black" href="CV/resume.html" target="_blank">
+                <i class="fa fa-circle user"></i>
+                My RESUME
+              </a>
+            </div>
+          </div>
+
+  <p class="w3-large w3-center w3-padding-16">Im really good at:</p>
+  <p class="w3-wide"><i class="fa fa-mobile"></i>Digital Marketing</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Designing/Development</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-bolt"></i>Automation</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">📣 Social Media</span><br>
+      <ul>
+          <li>Content Creation</li>
+          <li>Content Scheduling</li>
+          <li>Content Copy</li>
+          <li>Engagement/ Outreach</li>
+      </ul>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">🧠 Digital marketing</span><br>
+    <ul>
+      <li>Campaign Strategy</li>
+      <li>Ads basics</li>
+      <li>SEO basics</li>
+      <li>Analytics Setup</li>
+    </ul>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">🎨 Web Design</span><br>
+    <ul>
+      <li>Landing Page</li>
+      <li>Sales Funnels</li>
+      <li>UI mockups</li>
+      <li>Moodborads</li>
+    </ul>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">👩‍💻 Web Development</span><br>
+    <ul>
+      <li>Wordpress/ Wix</li>
+      <li>HTML/ CSS</li>
+      <li>Responsive Website (CSS Frameworks)</li>
+      <li>Javascript basics</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-orange w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK</h3>
+  <p class="w3-center">Here are some of my latest random work from random task.<br> <em>Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="/asset/POST3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
     </div>
 
-</footer><!--closing | Footer-->
+    <div class="w3-col m3">
+      <img src="/asset/flyers5.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/asset/post7.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src=" /asset/post8.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="/asset/FLYERS.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/asset/PAGE 1.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/asset/newsletter.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="/asset/PAGE 2.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="">
+    </div>
+  </div>
+<br><br>
+
+<div class="W3-row w3-center">
+            <div class="container">
+                <a class="w3-button w3-black" href="#sec" target="_self">
+                LOAD MORE
+              </a>
+            </div>
+          </div>
+<br>
+</div>
+  <div cdiv class="w3-content w3-display-container" style="max-width:800px">
+    <img
+            src="asset/videosite.jpg"
+            alt="Website Preview"
+            class="website-img"/>
+          <div>
+            <a href="https://www.canva.com/design/DAG-9dMxdsY/-BQsqALF3BqFEYJwPwPGCQ/view?utm_content=DAG-9dMxdsY&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb5c85852cd" target="_blank" class="website-link">
+              <i>Click here!</i>
+            </a>
+        </div>
+  </div>
+
+<br><br>
+
+  <div cdiv class="w3-content w3-display-container" style="max-width:800px">
+        <img
+          src="asset/WEB.jpg"
+          alt="Website Preview"
+          class="website-img"/>
+            <div>
+              <a href="https://ito-verse.netlify.app/" target="_blank" class="website-link">
+                <i>Click here!</i>
+              </a>
+            </div>
+  </div>
+</div>
+
+<br><br>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="asset/Data Scrubbing.jpg" style="width:100%">
+  <img class="mySlides" src="asset/Outreach Result.jfif" style="width:100%">
+  <img class="mySlides" src="asset/Mar1.jpg" style="width:100%">
+  <img class="mySlides" src="asset/Mar2.jpg" style="width:100%">
+  <img class="mySlides" src="asset/mar3.jpg" style="width:100%">
+  <img class="mySlides" src="asset/mar4.jpg" style="width:100%">
+  <img class="mySlides" src="asset/Besa analytics 1.jpg" style="width:100%">
+  <img class="mySlides" src="asset/Besa Analytics 2.jpg" style="width:100%">
+  <img class="mySlides" src="asset/Besa analytics 4.jpg" style="width:100%">
+  <img class="mySlides" src="asset/Besa analytics 8.jpg" style="width:100%">
+  <img class="mySlides" src="asset/Besa analytics 10 FB.jpg"style="width:100%">
+  <img class="mySlides" src="asset/mar5.jpg"style="width:100%">
+
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<br><br>
+  <div id="sec">
+    <img src="/asset/sec.png" style="width:100%"  alt="Designs">
+  </div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-orange w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <p class="w3-center"><em>I'd love to connect with you!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Laguna, PH<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +639067795852<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: lykamaysaavedra@gmail.com<br>
+      </div>
+      <p>Leave a message <i class="fa fa-envelope"></i> .</p>
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+
+  <div class="w3-xlarge w3-section">
+
+    <i class="fa fa-square-upwork w3-hover-opacity">
+      <a href="https://www.upwork.com/freelancers/~014f65511052799b71" target="_blank" class="website-link"></a>
+    </i>
+    <i class="fa fa-linkedin w3-hover-opacity">
+      <a href="https://www.linkedin.com/in/lyksph/" target="_blank" class="website-link"></a>
+    </i>
+    <i class="fa fa-github w3-hover-opacity">
+      <a href="https://github.com/Lyksph02" target="_blank" class="website-link"></a>
+    </i>
+    <i class="fa fa-circle-user w3-hover-opacity">
+      <a href="https://github.com/Lyksph02" target="_blank" class="website-link"></a>
+    </i>
+  </div>
+
+  <p>All copyrights | Lyks 2026</a></p>
+</footer>
 
 
-<!--CDN-->
-<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="script.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 <script>
+  new Typed("#typed", {
+  strings: [
+    "Social Media Manager",
+    "Digital Marketer",
+    "Web Dev",
+    "Web Designer",
+    "Funnel Builder",
+    "Automation"
+  ],
+  typeSpeed: 70,
+  backSpeed: 40,
+  backDelay: 1500,
+  loop: true
+})
 
-  $(document).ready(function(){
-    $('.parallax').parallax();
-  });
+// Light/ Dark Button
+  function myFunction() {
+  let x = document.body;
+  x.classList.toggle("w3-black");
+}
 
-  document.addEventListener('DOMContentLoaded', function() {
-  M.Carousel.init(document.querySelectorAll('.carousel'));
-});
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
 
-  document.addEventListener('DOMContentLoaded', function() {
-  const elems = document.querySelectorAll('.carousel');
-  M.Carousel.init(elems, {
-    indicators: true
-  });
-});
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
 </script>
 
 </body>
-
 </html>
